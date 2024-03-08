@@ -1,0 +1,59 @@
+:root {
+  --background: rgb(24, 19, 56);
+  --primary: hotpink;
+  --light: #efefef;
+}
+
+body {
+  background: var(--background);
+  color: var(--light);
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+p {
+  line-height: 135%;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+}
+
+.page-title {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.card-column {
+  flex-basis: 33%;
+}
+
+/* Tablet */
+@media screen and (max-width: 840px) {
+  .card-column {
+    flex-basis: 50%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767) {
+  .card-column {
+    flex-basis: 100%;
+  }
+}
